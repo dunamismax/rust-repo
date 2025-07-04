@@ -70,11 +70,11 @@ cargo run -p http-server
 
 This monorepo hosts several applications and libraries.
 
-### [HTTP Server](apps/http-server/src/main.rs)
+### [HTTP Server](https://github.com/dunamismax/rust-repo/blob/main/apps/http-server/src/main.rs)
 
 A lightweight, asynchronous HTTP server built with **Hyper** and **Tokio**. It demonstrates handling basic GET and POST requests, serving a simple HTML landing page and a JSON API endpoint.
 
-### [Weather CLI](apps/weather-cli/src/main.rs)
+### [Weather CLI](https://github.com/dunamismax/rust-repo/blob/main/apps/weather-cli/src/main.rs)
 
 A command-line weather application that fetches and displays the current weather for a specified city. It uses the OpenWeatherMap API and requires an API key to be set in a `.env` file.
 
