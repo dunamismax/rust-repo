@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.rust-lang.org/static/images/rust-logo-512x512.png" alt="Rust Monorepo logo" width="250"/>
+  <img src="https://github.com/rust-lang/rust-artwork/blob/master/logo/rust-logo-512x512.png" alt="Rust Monorepo logo" width="250"/>
 </p>
 
 Welcome to my Rust Monorepo. This repository centralizes diverse Rust applications and libraries, designed for efficient, scalable, and maintainable project management using Cargo Workspaces.
