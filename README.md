@@ -22,6 +22,9 @@ This monorepo serves as a centralized hub for various Rust projects. It leverage
 ```sh
 rust-repo/
 ├── apps/
+│   ├── blog-cli/
+│   │   ├── Cargo.toml
+│   │   └── src/main.rs
 │   ├── http-server/
 │   │   ├── Cargo.toml
 │   │   └── src/main.rs
@@ -31,12 +34,12 @@ rust-repo/
 │       └── src/main.rs
 │
 ├── libs/
-│   └── placeholder-lib/
+│   └── markdown-generator/
 │       ├── Cargo.toml
 │       └── src/lib.rs
 │
 ├── tools/
-│   └── placeholder-tool/
+│   └── link-checker/
 │       ├── Cargo.toml
 │       └── src/main.rs
 │
@@ -68,15 +71,21 @@ cargo run -p http-server
 
 ## Projects Overview
 
-This monorepo hosts several applications and libraries.
+This monorepo hosts several applications, libraries, and tools.
 
-### [HTTP Server](https://github.com/dunamismax/rust-repo/blob/main/apps/http-server/src/main.rs)
+### Applications
 
-A lightweight, asynchronous HTTP server built with **Hyper** and **Tokio**. It demonstrates handling basic GET and POST requests, serving a simple HTML landing page and a JSON API endpoint.
+*   **[HTTP Server](https://github.com/dunamismax/rust-repo/blob/main/apps/http-server/src/main.rs)**: A lightweight, asynchronous HTTP server built with **Hyper** and **Tokio**. It demonstrates handling basic GET and POST requests, serving a simple HTML landing page and a JSON API endpoint.
+*   **[Weather CLI](https://github.com/dunamismax/rust-repo/blob/main/apps/weather-cli/src/main.rs)**: A command-line weather application that fetches and displays the current weather for a specified city. It uses the OpenWeatherMap API and requires an API key to be set in a `.env` file.
+*   **[Blog Post Generator](https://github.com/dunamismax/rust-repo/blob/main/apps/blog-cli/src/main.rs)**: A command-line application for generating simple markdown blog posts from a template. It leverages the `markdown-generator` library to create the post content.
 
-### [Weather CLI](https://github.com/dunamismax/rust-repo/blob/main/apps/weather-cli/src/main.rs)
+### Libraries
 
-A command-line weather application that fetches and displays the current weather for a specified city. It uses the OpenWeatherMap API and requires an API key to be set in a `.env` file.
+*   **[Markdown Generator](https://github.com/dunamismax/rust-repo/blob/main/libs/markdown-generator/src/lib.rs)**: A reusable library for creating markdown content. It provides a `Post` struct and a function to generate a formatted markdown string from post data.
+
+### Tools
+
+*   **[Link Checker](https://github.com/dunamismax/rust-repo/blob/main/tools/link-checker/src/main.rs)**: A developer tool that scans markdown files and checks for broken or invalid URLs, helping to ensure the quality of documentation and blog posts.
 
 ---
 
@@ -107,8 +116,14 @@ cargo run -p http-server
 
 # Run the weather CLI
 # First, copy .env.example to .env and add your API key
-# cp apps/weather-cli/.env.example apps/weather-cli/.env
+# cp apps/weather-cli/.env.example .env
 cargo run -p weather-cli -- London
+
+# Generate a new blog post
+cargo run -p blog-cli -- --title "My First Post" --author "dunamismax"
+
+# Check for broken links in a markdown file
+cargo run -p link-checker -- "path/to/your/post.md"
 ```
 
 ### Clean Build Artifacts

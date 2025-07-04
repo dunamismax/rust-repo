@@ -1,0 +1,9 @@
+[package]
+name = "blog-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+markdown-generator = { path = "../../libs/markdown-generator" }
+clap = { version = "4.0", features = ["derive"] }
+slug = "0.1.4"
