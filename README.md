@@ -5,9 +5,9 @@
 Welcome to my Rust Monorepo. This repository centralizes diverse Rust applications and libraries, designed for efficient, scalable, and maintainable project management using Cargo Workspaces.
 
 [![Language: Rust](https://img.shields.io/badge/Language-Rust-orange.svg)](https://www.rust-lang.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/sawyer/rust-repo/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/sawyer/rust-repo/pulls)
-[![GitHub Stars](https://img.shields.io/github/stars/sawyer/rust-repo?style=social)](https://github.com/sawyer/rust-repo/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/dunamismax/rust-repo/blob/main/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/dunamismax/rust-repo/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/dunamismax/rust-repo?style=social)](https://github.com/dunamismax/rust-repo/stargazers)
 
 ---
 
@@ -54,7 +54,7 @@ To get started, clone the repository, build the projects, and run an application
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/sawyer/rust-repo.git
+git clone https://github.com/dunamismax/rust-repo.git
 cd rust-repo
 
 # 2. Build all projects in the workspace
