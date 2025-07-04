@@ -28,8 +28,11 @@ rust-repo/
 │   ├── http-server/
 │   │   ├── Cargo.toml
 │   │   └── src/main.rs
-│   └── weather-cli/
-│       ├── .env.example
+│   ├── weather-cli/
+│   │   ├── .env.example
+│   │   ├── Cargo.toml
+│   │   └── src/main.rs
+│   └── yt-dl-rs/
 │       ├── Cargo.toml
 │       └── src/main.rs
 │
@@ -78,6 +81,7 @@ This monorepo hosts several applications, libraries, and tools.
 *   **[HTTP Server](https://github.com/dunamismax/rust-repo/blob/main/apps/http-server/src/main.rs)**: A lightweight, asynchronous HTTP server built with **Hyper** and **Tokio**. It demonstrates handling basic GET and POST requests, serving a simple HTML landing page and a JSON API endpoint.
 *   **[Weather CLI](https://github.com/dunamismax/rust-repo/blob/main/apps/weather-cli/src/main.rs)**: A command-line weather application that fetches and displays the current weather for a specified city. It uses the OpenWeatherMap API and requires an API key to be set in a `.env` file.
 *   **[Blog Post Generator](https://github.com/dunamismax/rust-repo/blob/main/apps/blog-cli/src/main.rs)**: A command-line application for generating simple markdown blog posts from a template. It leverages the `markdown-generator` library to create the post content.
+*   **[YouTube Downloader](https://github.com/dunamismax/rust-repo/blob/main/apps/yt-dl-rs/src/main.rs)**: A command-line tool that downloads YouTube videos in the highest possible quality.
 
 ### Libraries
 
@@ -124,6 +128,9 @@ cargo run -p blog-cli -- --title "My First Post" --author "dunamismax"
 
 # Check for broken links in a markdown file
 cargo run -p link-checker -- "path/to/your/post.md"
+
+# Download a YouTube video
+cargo run -p yt-dl-rs
 ```
 
 ### Clean Build Artifacts
