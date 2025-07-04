@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "apps/*",
+    "libs/*",
+    "tools/*",
+]
+
+[workspace.dependencies]
+serde = "1.0"
+tokio = { version = "1", features = ["full"] }
+reqwest = "0.11"
+serde_json = "1.0"
+dotenv = "0.15"
+hyper = { version = "1.0", features = ["full"] }
+http-body-util = "0.1"
+hyper-util = { version = "0.1", features = ["full"] }
