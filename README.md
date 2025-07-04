@@ -7,7 +7,7 @@ Welcome to my Rust Monorepo. This repository centralizes diverse Rust applicatio
 [![Language: Rust](https://img.shields.io/badge/Language-Rust-orange.svg)](https://www.rust-lang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/dunamismax/rust-repo/blob/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/dunamismax/rust-repo/pulls)
-[![GitHub Stars](https://img.shields.io/github/stars/dunamismax/rust-repo?style=social)](https://github.com/dunamismax/rust-repo/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/dunamismax/rust-repo)](https://github.com/dunamismax/rust-repo/stargazers)
 
 ---
 
