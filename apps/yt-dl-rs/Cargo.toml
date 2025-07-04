@@ -1,11 +1,32 @@
-
 [package]
 name = "yt-dl-rs"
-version = "0.1.0"
+version = "0.1.7"
+authors = ["Bryan Yi"]
 edition = "2021"
+description = "A simple to use Cli for downloading YouTube videos"
+readme = "README.md"
+license = "MIT"
+keywords = ["cli"]
+categories = ["command-line-utilities"]
+homepage = "https://github.com/bryanyi/cli-yt-downloader"
+repository = "https://github.com/bryanyi/cli-yt-downloader"
+
+[[bin]]
+name = "yt-dl-rs"
+path = "src/main.rs"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-youtube_dl = "0.10.0"
-tokio = { version = "1", features = ["full"] }
-dialoguer = "0.11.0"
-home = "0.5.9"
+clap = { version = "4.5.31", features = ["derive"] }
+rustube = {version = "0.6.0", features = ["callback"]}
+serde = { version = "1.0.218", features = ["derive"] }
+serde_json = "1.0.140"
+tokio = {version = "1.43.0", features = ["full"] }
+indicatif = "0.17.8"
+home = "0.5.11"
+directories = "6.0.0"
+url = "2.5.4"
+reqwest = { version = "0.11", features = ["json"] }
+dirs = "5.0"
