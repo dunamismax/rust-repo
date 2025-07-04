@@ -3,11 +3,29 @@
 target/
 Cargo.lock
 
+# Rust-specific build artifacts and temporary files
+**/*.rs.bk
+**/*.rlib
+**/*.d
+**/*.profdata
+**/*.gcno
+**/*.gcda
+**/*.profraw
+**/*.pdb
+**/*.dll
+**/*.so
+**/*.dylib
+**/*.exe
+
 # Ignore editor-specific files.
 .idea/
 .vscode/
 *.sublime-workspace
 *.sublime-project
+*.iml
+*.ipr
+*.iws
+*.code-workspace
 
 # Ignore OS-specific files.
 .DS_Store
@@ -33,3 +51,5 @@ ehthumbs.db
 *.tmp
 *.swp
 *~
+*.bak
+*.swo
